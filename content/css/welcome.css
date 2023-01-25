@@ -1,0 +1,36 @@
+section .container .welcome{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+section .container .welcome .col-6{
+    width: calc(50% - 30px);
+}
+section .container .welcome .col-6 p{
+    margin: 20px 0 40px;
+    font-size: 24px;
+}
+@media screen and (max-width: 767px) {
+    section .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    section .container .welcome {
+      justify-content: center;
+    }
+    section .container .welcome .col-6 {
+      width: 100%;
+      text-align: center;
+    }
+    section .container .welcome .col-6 .img {
+      width: 315px;
+      height: 315px;
+      margin: auto;
+    }
+    section .container .welcome .col-6 h2 {
+      font-size: 32px;
+    }
+  }
+  

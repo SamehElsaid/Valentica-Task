@@ -1,0 +1,95 @@
+section .container .create {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section .container .create .col-6 {
+  width: calc(50% - 30px);
+}
+section .container .create .col-6 p {
+  margin: 20px 0 40px;
+  font-size: 24px;
+}
+form {
+  display: grid;
+  gap: 10px;
+}
+form .img {
+  width: 30px;
+  height: 20px;
+  padding-right: 10px;
+  border-right: 1px solid #DBE3FF;
+  object-fit: fill;
+}
+
+form .boxInput {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  background: white;
+  border-radius: var(--main-border-radius);
+}
+form .boxInput input{
+    width: 100%;
+}
+form .btn{
+    margin-top: 10px;
+}
+form .parent {
+  display: grid;
+}
+form .parent span{
+  color: var(--main-sec);
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  section .container .create {
+    justify-content: center;
+    gap: 30px;
+  }
+  section .container .create .col-6 {
+    width: 100%;
+    text-align: center;
+  }
+  section .container .create .col-6 .mainImg {
+    width: 315px;
+    height: 315px;
+    margin: auto;
+  }
+  section .container .create .col-6 h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  section .container .create {
+    justify-content: center;
+    gap: 30px;
+  }
+  section .container .create .col-6 {
+    width: 100%;
+    text-align: center;
+  }
+  section .container .create .col-6 .mainImg {
+    width: 315px;
+    height: 315px;
+    margin: auto;
+  }
+  section .container .create .col-6 h2 {
+    font-size: 32px;
+  }
+}
